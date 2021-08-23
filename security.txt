@@ -1,0 +1,4 @@
+Contact: mailto:bootcamp@microtrain.net
+Expires: 2021-10-23T14:50:00.000Z
+Preferred-Languages: en
+Canonical: https://microtrain2108.github.io/security.txt
