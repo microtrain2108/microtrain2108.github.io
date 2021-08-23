@@ -2,20 +2,25 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="MicroTrain2108 Resume Chicago West Loop">
     <meta name="keywords" content="Resume, MicroTrain2108, LAMP, Linux, MEAN, MERN, HTML, CSS, webdesign, development, web developer, Chicago West Loop">
        <title>MicroTrain2108 Resume</title>
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
     </head>
     <body>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <main>
+      <header>
+        <span class="logo">MicroTrain2018</span>
+        <a id="toggleMenu">Menu<a>
+          <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>    
+        <main>
         <section>
       <h1>MicroTrain2108</h1>
 <div>
@@ -134,5 +139,20 @@ MicroTrain Technologies - Chicago, IL
 <p>Covering the principles of Agile and Scrum methodology through a combination of robust simulations, hands-on experimentation and high-quality instruction. Currently learning the fundamentals of Scrum and how to facilitate, coach and lead an Agile project.</p>
 </section>
 </main>
+<script>
+
+  var toggleMenu = document.getElementById('toggleMenu');
+  var nav = document.querySelector('nav');
+  toggleMenu.addEventListener(
+    'click',
+    function(){
+      if(nav.style.display=='block'){
+        nav.style.display='none';
+      }else{
+        nav.style.display='block';
+      }
+    }
+  );
+</script>
 </body>
 </html>

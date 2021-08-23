@@ -2,18 +2,23 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Contact MicroTrain2108 Chicago West Loop For Development">
     <meta name="keywords" content="contact, MicroTrain2108, webdesign, development, web developer, Chicago West Loop">
     <title>MicroTrain2108 Contact Chicago West Loop For Development</title>
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
     </head>
-    <nav>
+    <header>
+      <span class="logo">MicroTrain2018</span>
+      <a id="toggleMenu">Menu<a>
+        <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </header>    
     <body>
       <main>
         <section>
@@ -43,5 +48,20 @@
         <input type="hidden" name="_next" value="//microtrain2108.github.io/thanks.html">
       </form>
     </main>
+    <script>
+
+      var toggleMenu = document.getElementById('toggleMenu');
+      var nav = document.querySelector('nav');
+      toggleMenu.addEventListener(
+        'click',
+        function(){
+          if(nav.style.display=='block'){
+            nav.style.display='none';
+          }else{
+            nav.style.display='block';
+          }
+        }
+      );
+    </script>
     </body>
 </html>
